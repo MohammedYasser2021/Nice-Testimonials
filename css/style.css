@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #ddd;
+}
+
+.sec-head{
+    width: 300px;
+    margin: 50px auto 0 ;
+    text-align: center;
+}
+
+.sec-head h2{
+    margin-bottom: 7px;
+    font-size: 30px;
+}
+
+.sec-head .line{
+    width: 80px;
+    height: 4px;
+    background-color: #458BF6;
+    display: block;
+    margin: auto;
+    transition: width 0.4s ease-in-out;
+}
+.sec-head:hover .line{
+    width: 120px;
+} 
+
+.review{
+    width: 500px;
+    margin: 30px auto;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px #aaa;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px
+}
+.img-container{
+    position: relative;
+    text-align: center;
+}
+.review img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 6px -4px #6790C3
+}
+.img-container::after{
+    content: ",,";
+    position: absolute;
+    display: block;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 12px;
+    color: #fff;
+    font-size: 40px;
+    border-radius: 50%;
+    background-color: #6790C3;
+    top: 30px;
+    left: 33%
+}
+
+.review h4{
+    margin-top: 15px;
+    letter-spacing: 5px;
+}
+
+.review p:nth-of-type(1){
+    color: #458BF6;
+    margin-top: 5px;
+}
+.review p:nth-of-type(2){
+    line-height: 1.5;
+    color: #777;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.buttons-container{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.review .prev-btn , .review .next-btn{
+    border: none;
+    outline: none;
+    width: 40px;
+    background-color: transparent;
+    color: #0EBEBF;
+    font-size: 18px;
+    cursor: pointer;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 5px;
+    transition: all 0.3s ease-in-out;
+    font-family: inherit;
+}
+.review .prev-btn:hover , .review .next-btn:hover{
+    background-color:#458BF6;
+    color: #fff
+}
+
+.random-btn{
+    display: block;
+    width: 120px;
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    color: #458BF6;
+    background-color: transparent;
+    border: 2px solid #458BF6;
+    border-radius: 10px;
+    font-family: inherit;
+    margin: 20px auto 0;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+}
+
+.random-btn:hover{
+    background-color: #458BF6;
+    color: #fff;
+}
